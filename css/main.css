@@ -1,0 +1,217 @@
+@import "colors.css";
+* {
+    margin: 0;
+    left: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--bg-primary) !important;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#Head img {
+    width: 130px;
+    height: 60px;
+}
+
+#Produtos,
+#Sobre {
+    background-image: url("../assets/bg.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    box-shadow: 1px 1px 1px var(--black-color);
+}
+
+#Produtos h4,
+#Sobre h4 {
+    padding-top: 30px;
+    color: var(--white-color) !important;
+}
+
+p {
+    color: var(--white-color);
+    letter-spacing: 2px;
+}
+
+.hr {
+    width: 50%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: var(--bg-primary);
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.box {
+    height: 500px;
+}
+
+.navbar-brand {
+    color: var(--black-color) !important;
+}
+
+.menu-item {
+    color: var(--bg-primary) !important;
+    display: block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.menu-item:hover {
+    border-bottom: 2px solid var(--bg-primary);
+}
+
+#Produtos img {
+    width: 400px;
+    height: 200px;
+}
+
+#Inicio img {
+    height: 400px;
+}
+
+.depoimentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-image: url("../assets/bg.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    box-shadow: 1px 1px 1px var(--black-color);
+    border-radius: 10px;
+}
+
+.depoimento {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    transition: all 0.5s;
+}
+
+.depoimento p {
+    color: black;
+}
+
+.depoimento:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to right, #353852, #9B643D, #3F3F3F);
+}
+
+.depoimento:hover p {
+    color: var(--white-color);
+}
+
+.mensagem {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.autor {
+    font-weight: bold;
+}
+
+.depoimento:nth-child(odd) {
+    transform: rotate(-2deg);
+}
+
+.depoimento:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+.contact {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-item {
+    width: 300px;
+    margin: 0 20px 20px;
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info-item i {
+    font-size: 48px;
+    color: #007bff;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.info-item:hover i {
+    transform: rotate(360deg);
+}
+
+.info-item h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.info-item:hover h3 {
+    color: #007bff;
+}
+
+.info-item p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.info-item:hover p {
+    color: #333;
+}
+
+#hidden-text {
+    display: none;
+    height: 200px;
+    overflow: auto;
+}
